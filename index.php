@@ -1,5 +1,5 @@
 <?php
-  echo 'Bienvenu dans docker';
+  echo 'Bienvenu dans docker'; </br>
 
   $host = 'localhost';
   $user = 'devuser';
