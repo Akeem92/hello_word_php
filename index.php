@@ -4,7 +4,7 @@
 <br>
 <?php
 
-  $host = 'localhost';
+  $host = 'db';
   $user = 'devuser';
   $password = 'devpass';
   $db = 'test_db';
