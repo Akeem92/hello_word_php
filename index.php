@@ -1,7 +1,7 @@
 <?php
   echo 'Bienvenu dans docker';
 
-  $host = 'db';
+  $host = 'localhost';
   $user = 'devuser';
   $password = 'devpass';
   $db = 'test_db';
