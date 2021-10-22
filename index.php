@@ -15,3 +15,19 @@
   }
   echo 'Sucessfuly connected to MySql';
 ?>
+
+<?php
+  $query = "select * from Clients;";
+  $queryResult = $conn->query($query);
+
+  echo "<table>";
+  while ($queryRow = $queryResult->fetch_row()) {
+      echo "<tr>";
+      for($i = 0; $i < $queryResult->field_count; $i++){
+          echo "<td>$queryRow[$i]</td>";
+      }
+      echo "</tr>";
+  }
+  echo "</table>";
+  $conn->close();
+?>
