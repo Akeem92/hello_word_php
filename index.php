@@ -20,7 +20,7 @@
 ?>
 
 <?php
-  $query = "select * from Clients;"
+  $query = "select * from Clients;";
     
   $queryResult = $conn->query($query);
 
