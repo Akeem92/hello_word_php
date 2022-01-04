@@ -14,15 +14,14 @@
     echo 'Connection failed' . $conn->connect_error;
   }
   echo 'Sucessfuly connected to MySql';
+
+  $conn->query("create table Clients(id int, nom varchar(255), prenom varchar(255));");
+  $conn->query("insert into Clients(id, nom, prenom) values (1, 'Paul', 'Bernard'), (2, 'Frejus', 'Segla');");
 ?>
 
 <?php
-  $query = "select * from Clients;";
-  $query_create_table = "create table Clients(id int, nom varchar(255), prenom varchar(255));";
-  $query_add_elements = "insert into Clients(id, nom, prenom) values (1, 'Paul', 'Bernard'), (2, 'Frejus', 'Segla');";
-  
-  $conn->query($query_create_table);
-  $conn->query($query_add_elemets);
+  $query = "select * from Clients;"
+    
   $queryResult = $conn->query($query);
 
   echo "<table>";
