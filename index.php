@@ -5,8 +5,8 @@
 <?php
 
   $host = 'db';
-  $user = 'devuser';
-  $password = 'devpass';
+  $user = 'root';
+  $password = 'root';
   $db = 'test_db';
 
   $conn = new mysqli($host, $user, $password, $db);
